@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bake Story</string>
+    <string name="servings">7</string>
+    <string name="ingredients_label">Recipe Ingredients</string>
+    <string name="steps_label">How To Make One</string>
+    <string name="video_description">Introduction to the recipe</string>
+    <string name="title_for_empty_view">No Recipes Found</string>
+    <string name="text_for_empty_view">No Internet Connection</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="add_to_widget">add to widget</string>
+</resources>
