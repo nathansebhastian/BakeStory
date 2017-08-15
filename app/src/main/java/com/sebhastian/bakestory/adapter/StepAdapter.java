@@ -73,11 +73,17 @@ public class StepAdapter extends RecyclerView.Adapter<StepAdapter.ViewHolder> {
                     .into(holder.mStepListImageView);
         }
         else {
-            Picasso.with(context).
-                    load(R.drawable.video)
-                    .into(holder.mStepListImageView);
+            if (step.getThumbnailURL().isEmpty()){
+                Picasso.with(context).
+                        load(R.drawable.video)
+                        .into(holder.mStepListImageView);
+            }
+            else{
+                Picasso.with(context).
+                        load(step.getThumbnailURL())
+                        .into(holder.mStepListImageView);
+            }
         }
-
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

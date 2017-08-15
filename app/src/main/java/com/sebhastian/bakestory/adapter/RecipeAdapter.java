@@ -115,6 +115,20 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.ViewHolder
                             .into(holder.mRecipeImageView);
                 }
                 break;
+            default:
+                if(!recipe.getImage().isEmpty()) {
+
+                    Picasso.with(context).
+                            load(recipe.getImage())
+                            .placeholder(R.drawable.cake)
+                            .error(R.drawable.cake)
+                            .into(holder.mRecipeImageView);
+                } else {
+                    Picasso.with(context).
+                            load(R.drawable.cake)
+                            .into(holder.mRecipeImageView);
+                }
+                break;
         }
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
