@@ -76,7 +76,6 @@ public class StepFragment extends Fragment {
 
         else {
             mStep = getArguments().getParcelable("STEP_OBJ");
-
             if (mStep != null) {
                 recipeStepDescriptionView.setText(mStep.getDescription());
                 simpleExoPlayerView = recipeStepVideoView;
@@ -90,7 +89,6 @@ public class StepFragment extends Fragment {
                     simpleExoPlayerView.setVisibility(View.GONE);
                 }
             }
-
         }
         return rootView;
     }
